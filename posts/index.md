@@ -5,7 +5,7 @@ next: false
 lastUpdated: false
 ---
 
-欢迎来到 rbackly 的学习记事本&nbsp;<span :class="$style.motto"></span>
+欢迎来到 rbackly 的学习笔记本&nbsp;<span :class="$style.motto"></span>
 
 <style module>
   @keyframes blink {
