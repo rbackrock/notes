@@ -3,13 +3,18 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'rbackly 的学习记事本',
-  description: 'rbackly 的学习记事本',
-  lastUpdated: true,
+  title: 'rbackly 的学习笔记本',
+  description: 'rbackly 的学习笔记本',
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    lastUpdated: true,
+
+    outline: {
+      level: 'deep'
+    },
+
     nav: [
-      { text: 'Home', link: '/' }
+      { text: '首页', link: '/' },
+      { text: '关于', link: '/about' }
     ],
 
     sidebar: [
@@ -32,13 +37,18 @@ export default defineConfig({
         items: [
           { text: 'Blender 技巧', link: '/web3d/blender-skill' },
           { text: 'threejs 技巧', link: '/web3d/threejs-skill' },
-          { text: 'WebGL 着色器案例', link: '/web3d/blender-skill' }
+          { text: 'WebGL 着色器案例', link: '/web3d/webgl-shader-case' }
         ]
       }
     ],
 
+    footer: {
+      message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
+      copyright: 'Copyright © 2019-present <a href="https://github.com/yyx990803">Evan You</a>'
+    },
+
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/rbackrock' }
     ]
   }
 })
