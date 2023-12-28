@@ -5,6 +5,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'rbackly 的学习笔记本',
   description: 'rbackly 的学习笔记本',
+  outDir: '../dist',
   themeConfig: {
     lastUpdated: true,
 
