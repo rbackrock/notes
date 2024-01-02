@@ -10,7 +10,7 @@ export default defineConfig({
     lastUpdated: true,
 
     outline: {
-      level: 'deep'
+      level: [1, 6]
     },
 
     nav: [
@@ -28,17 +28,23 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Web3d',
+        items: [
+          { text: 'Blender 技巧', link: '/web3d/blender-skill' },
+          { text: 'threejs 技巧', link: '/web3d/threejs-skill' },
+          { text: 'WebGL 着色器案例', link: '/web3d/webgl-shader-case' }
+        ]
+      },
+      {
         text: '工具',
         items: [
           { text: '构建属于自己的穿透工具', link: '/tools/build-behind-nat-firewall-local-server' },
         ]
       },
       {
-        text: 'Web3d',
+        text: '临摹低多边形3D场景',
         items: [
-          { text: 'Blender 技巧', link: '/web3d/blender-skill' },
-          { text: 'threejs 技巧', link: '/web3d/threejs-skill' },
-          { text: 'WebGL 着色器案例', link: '/web3d/webgl-shader-case' }
+          { text: '场景1', link: '/low-polygon-scene/s1' },
         ]
       }
     ],
