@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "yhuan",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "preview": "vitepress preview posts"
   },
   "author": "",
-  "license": "MIT",
+  "license": "LGPL-3.0-only",
   "devDependencies": {
     "less": "^4.2.0",
     "vitepress": "^1.0.0-rc.34"
