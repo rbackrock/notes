@@ -1,9 +1,8 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
-import './style.css'
+import './default-style.css'
 
-/** @type {import('vitepress').Theme} */
 export default {
   extends: DefaultTheme,
   Layout: () => {
@@ -12,6 +11,5 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
   }
 }

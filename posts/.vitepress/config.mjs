@@ -8,16 +8,14 @@ export default defineConfig({
   outDir: '../dist',
   themeConfig: {
     lastUpdated: true,
-
+    head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
     outline: {
       level: [1, 6]
     },
-
     nav: [
       { text: '首页', link: '/' },
       { text: '关于', link: '/about' }
     ],
-
     sidebar: [
       {
         text: '前端',
@@ -48,7 +46,6 @@ export default defineConfig({
         ]
       }
     ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/rbackrock' }
     ]
